@@ -1,7 +1,7 @@
 {
 	"values": [
-		"hub:load",
 		"admintool:load",
+		"hub:load",
 		"jump:load"
 	]
 }
