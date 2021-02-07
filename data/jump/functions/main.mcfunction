@@ -1,5 +1,6 @@
 execute at @a[tag=jump] if block ~ ~-1 ~ minecraft:barrier run kill @p
 function jump:checkpoint
+function jump:jump
 execute at @e[tag=jumppoint] as @a[distance=0..2,limit=1,tag=jump] run spawnpoint
 scoreboard players enable @a jump
 scoreboard players enable @a jump_act
