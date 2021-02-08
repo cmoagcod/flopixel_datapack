@@ -15,4 +15,7 @@ tp @a[scores={hub=1..}] @e[tag=hubpoint,limit=1]
 scoreboard players reset @a[scores={hub=1..}] hub
 
 
+scoreboard players reset @a[scores={rules=1..}] rules
+
+
 scoreboard players enable @a hub
