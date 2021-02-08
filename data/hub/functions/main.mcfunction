@@ -7,15 +7,13 @@ execute at @e[tag=hubpoint] run spawnpoint @a[distance=0..2,limit=1]
 execute at @e[tag=hubpoint] as @a[distance=0..2,limit=1] run trigger jump_act set 0
 execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..2,limit=1] level
 execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..2,limit=1] hub
+execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..1] rules
 
 
 tp @a[scores={hub=1..}] @e[tag=hubpoint,limit=1]
 
 
 scoreboard players reset @a[scores={hub=1..}] hub
-
-
-scoreboard players reset @a[scores={rules=1..}] rules
 
 
 scoreboard players enable @a hub
