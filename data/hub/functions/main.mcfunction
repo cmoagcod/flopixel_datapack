@@ -9,9 +9,6 @@ execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..2,limit=
 execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..2,limit=1] hub
 
 
-tellraw @a[scores={sneak=10..}] ["",{"text":"Retour au hub: "},{"text":"GO","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger hub"}}]
-
-
 tp @a[scores={hub=1..}] @e[tag=hubpoint,limit=1]
 
 
@@ -19,6 +16,3 @@ scoreboard players reset @a[scores={hub=1..}] hub
 
 
 scoreboard players enable @a hub
-
-
-scoreboard players reset @a[scores={sneak=10..}] sneak
