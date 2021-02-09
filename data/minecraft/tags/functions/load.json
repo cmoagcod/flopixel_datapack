@@ -2,6 +2,7 @@
 	"values": [
 		"admintool:load",
 		"hub:load",
+		"1v1:load",
 		"jump:load"
 	]
 }
