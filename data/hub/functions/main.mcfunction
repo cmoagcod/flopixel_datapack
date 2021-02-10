@@ -8,6 +8,8 @@ execute at @e[tag=hubpoint] as @a[distance=0..2,limit=1] run trigger jump_act se
 execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..2,limit=1] level
 execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..2,limit=1] hub
 execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..1] rules
+execute at @e[tag=hubpoint] run clear @a[distance=0..1]
+execute at @e[tag=hubpoint] run tag @a[distance=0..1] remove kit_given
 
 
 tp @a[scores={hub=1..}] @e[tag=hubpoint,limit=1]
