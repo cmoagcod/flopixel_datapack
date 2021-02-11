@@ -10,6 +10,7 @@ execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..2,limit=
 execute at @e[tag=hubpoint] run scoreboard players reset @a[distance=0..1] rules
 execute at @e[tag=hubpoint] run clear @a[distance=0..1,tag=!admin]
 execute at @e[tag=hubpoint] run tag @a[distance=0..1] remove kit_given
+execute at @e[tag=hubpoint] run tag @a[distance=0..1] remove jump
 
 
 tp @a[scores={hub=1..}] @e[tag=hubpoint,limit=1]
